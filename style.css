@@ -23,6 +23,11 @@
     width: 10%;
     cursor: pointer;
 }
+.app{
+    width: 100%;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
 .navbar ul li{
     list-style: none;
     display: inline-block;
@@ -64,34 +69,117 @@
     font-weight: 100;
     line-height: 25px;
 }
-button{
-    width: 200px;
-    padding: 15px 0;
-    text-align: center;
+
+/*Botón Discord*/
+
+.button1 {
+    width: 100px;
+    height: 100px;
     margin: 20px 10px;
-    border-radius: 25px;
+    border-radius: 100px;
     font-weight: bold;
     border: 2px solid #009688;
-    background: transparent;
+    background: url(discord.png);
+    background-size: contain;
     color: #fff;
     cursor: pointer;
     position: relative;
     overflow: hidden;
-}
-span{
+  }
+  
+.button1::before {
+    content: '';
     background: #009688;
     height: 100%;
     width: 0;
-    border-radius: 25px;
+    border-radius: 100px;
     position: absolute;
     left: 0;
     bottom: 0;
     z-index: -1;
     transition: 0.5s;
-}
-button:hover span{
+  }
+  
+.button1:hover::before {
     width: 100%;
-}
-button:hover{
-    border: none;
-}
+  }
+  
+.button1:hover {
+    border: 0;
+  }
+
+/*Botón Twitter*/
+
+.button2 {
+    width: 100px;
+    height: 100px;
+    margin: 20px 10px;
+    border-radius: 100px;
+    font-weight: bold;
+    border: 2px solid #009688;
+    background: url(twitter.png);
+    background-size: contain;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+  }
+  
+.button2::before {
+    content: '';
+    background: #009688;
+    height: 100%;
+    width: 0;
+    border-radius: 100px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+  }
+  
+.button2:hover::before {
+    width: 100%;
+  }
+  
+.button2:hover {
+    border: 0;
+  }
+
+/*Botón PCcom*/
+
+  .button3 {
+    width: 100px;
+    height: 100px;
+    margin: 20px 10px;
+    border-radius: 100px;
+    font-weight: bold;
+    border: 2px solid #009688;
+    background: url(pc.png);
+    background-size: contain;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+  }
+  
+.button3::before {
+    content: '';
+    background: #009688;
+    height: 100%;
+    width: 0;
+    border-radius: 100px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+  }
+  
+.button3:hover::before {
+    width: 100%;
+  }
+  
+.button3:hover {
+    border: 0;
+  }
