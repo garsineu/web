@@ -91,17 +91,19 @@
     content: '';
     background: #009688;
     height: 100%;
-    width: 0;
+    width: 100%;
     border-radius: 100px;
     position: absolute;
     left: 0;
     bottom: 0;
     z-index: -1;
+    transform-origin: center;
+    transform: scale(0);
     transition: 0.5s;
   }
   
 .button1:hover::before {
-    width: 100%;
+    transform: scale(1);
   }
   
 .button1:hover {
@@ -129,17 +131,19 @@
     content: '';
     background: #009688;
     height: 100%;
-    width: 0;
+    width: 100%;
     border-radius: 100px;
     position: absolute;
     left: 0;
     bottom: 0;
     z-index: -1;
+    transform-origin: center;
+    transform: scale(0);
     transition: 0.5s;
   }
   
 .button2:hover::before {
-    width: 100%;
+    transform: scale(1);
   }
   
 .button2:hover {
@@ -167,17 +171,19 @@
     content: '';
     background: #009688;
     height: 100%;
-    width: 0;
+    width: 100%;
     border-radius: 100px;
     position: absolute;
     left: 0;
     bottom: 0;
     z-index: -1;
+    transform-origin: center;
+    transform: scale(0);
     transition: 0.5s;
   }
   
 .button3:hover::before {
-    width: 100%;
+    transform: scale(1);
   }
   
 .button3:hover {
