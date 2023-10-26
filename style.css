@@ -41,16 +41,19 @@
 }
 .navbar ul li::after{
     content: '';
-    height: 3px;
-    width: 0;
     background: #009688;
     position: absolute;
     left: 0;
-    bottom: -10px;
-    transition: 0.5s;
+    bottom: -6px;
+    height: 3px;
+    width: 100%;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s;
 }
 .navbar ul li:hover::after{
-    width: 100%;
+  transform-origin: left;
+  transform: scaleX(1);
 }
 .content{
     width: 100%;
